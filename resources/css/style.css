@@ -154,6 +154,31 @@ input[type=submit]:hover{
     float: left;
 }
 
+.sticky-nav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(255,255,255,.8);
+    width: 100%;
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 999;
+}
+
+.sticky-nav .logo{
+    height: 60px;
+    margin-top: 3px;
+}
+
+.sticky-nav .main-nav{
+    margin-top: 18px;
+}
+
+.sticky-nav .main-nav li a:link,
+.sticky-nav .main-nav li a:visited{
+    color: #555;
+    padding: 5px 0;
+}
+
 .laptop-image{
     width:80%
 }
@@ -573,3 +598,19 @@ footer p{
     margin-top: 50px;
     line-height: 1.5;
 }
+
+/****** JQUERY Animate on Scroll******/
+
+.js--about-box{
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+.js--about-box .animate animated{
+    opacity: 1;
+}
+
+.js--service-box{
+    animation-duration: 1.5s;
+}
+
